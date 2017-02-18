@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="menu-bar" class="cls-1" d="M14,74H37a1,1,0,0,1,1,1v2a1,1,0,0,1-1,1H14a1,1,0,0,1-1-1V75A1,1,0,0,1,14,74Zm0,8H37a1,1,0,0,1,1,1v2a1,1,0,0,1-1,1H14a1,1,0,0,1-1-1V83A1,1,0,0,1,14,82Zm0,8H37a1,1,0,0,1,1,1v2a1,1,0,0,1-1,1H14a1,1,0,0,1-1-1V91A1,1,0,0,1,14,90Z" transform="translate(-13 -74)"/>
+</svg>

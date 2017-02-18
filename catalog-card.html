@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Карточка товара</title>
+
+	<!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link href="css/jquery.formstyler.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/timeTo.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+
+<body>
+			<!--[if lt IE 9]>
+	      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	     	<p class="browserupgrade">Вы используете <strong>устаревшую версию</strong> браузера. Пожалуйста <a href="http://browsehappy.com/">обновите Ваш браузер</a></p>
+	     	<![endif]-->
+	     	<div class="nav-responsive">	
+	     		<div class="wrap-responsive-menu">
+	     			<div class="search search-responsive">
+	     				<form class="search__form" action="/page">
+	     					<input type="text" class="search__input" placeholder="Поиск по сайту">
+	     					<button class="search__btn" type="submit"></button>
+	     				</form>					
+	     			</div>
+	     			<button class="nav-responsive__close"></button>
+	     			<ul class="menu-responsive">
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">О нас</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Наши магазины</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Оплата</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Доставка</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Отзывы</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Акции</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Новости</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Скидка в день рождения</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Вакансии</a></li>
+	     				<li class="menu-responsive__item"><a href="#" class="menu-responsive__lnk">Дисконт система</a></li>
+	     			</ul>
+	     		</div>
+	     		<div class="header-phone header-phone_responsive">
+	     			<span class="header-phone__number">8 (800) 200-87-57<br></span> <span>Звонок бесплатный</span>
+	     		</div>
+	     	</div>
+	     	<div class="wrap-all">
+	     		<div class="wrap-top">
+	     			<header class="header-top">
+	     				<div class="top-line">
+	     					<button class="nav-btn__responsive hidden-lg"></button>
+	     					<nav class="nav-top">	
+	     						<ul class="nav-top__list">
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">О нас</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Наши магазины</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Оплата</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Доставка</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Отзывы</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Акции</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Новости</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Скидка в день рождения</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Вакансии</a></li>
+	     							<li class="nav-top__item"><a href="#" class="nav-top__lnk">Дисконт система</a></li>
+	     						</ul>								
+	     					</nav>
+	     					<div class="login"><a href="#">Личный кабинет</a></div>
+	     					<div class="sale-russia"><a href="#">Продажа в России</a></div>
+	     					<div class="basket">
+	     						<a href="#" class="basket__price"><span class="basket__count">3</span> 12 375 p</a>
+	     						<a href="#" class="basket__like">12</a>
+	     					</div>						
+	     				</div>
+	     				<div class="container">
+	     					<div class="row">
+	     						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+	     							<div class="header-phone header-phone__middle">
+	     								<span class="header-phone__number">8 (800) 200-87-57<br></span> <span>Звонок бесплатный</span>
+	     							</div>
+	     						</div>
+	     						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+	     							<div class="logo img-full"><img src="i/logo.png" alt="АтыБаты"></div>
+	     						</div>
+	     						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+	     							<div class="basket basket__middle">
+	     								<a href="#" class="basket__price"><span class="basket__count">3</span> 12 375 p</a>
+	     								<a href="#" class="basket__like">12</a>
+	     							</div>
+	     						</div>								
+	     					</div>								
+	     				</div>
+	     				<div class="header-main__nav">
+	     					<div class="container">
+	     						<div class="row">
+	     							<div class="col-lg-9 col-md-12 col-sm-12">
+	     								<button class="header-main__responsive hidden-md hidden-lg hidden-sm"><span></span></button>
+	     								<nav>
+	     									<ul class="nav-header__list">
+	     										<li class="nav-header__item noslide"><a class="nav-header__lnk" href="#">Женская обувь</a></li>
+	     										<li class="nav-header__item">
+	     											<a class="nav-header__lnk" href="#">Мужская обувь</a>
+	     											<ul class="nav-header__sublist">
+	     												<li class="sublist__item"><a class="sublist__lnk" href="#">Кеды</a></li>
+	     												<li class="sublist__item"><a class="sublist__lnk" href="#">Мокасины</a></li>
+	     												<li class="sublist__item"><a class="sublist__lnk" href="#">Пантолеты</a></li>
+	     												<li class="sublist__item"><a class="sublist__lnk" href="#">Полуботинки</a></li>
+	     												<li class="sublist__item"><a class="sublist__lnk" href="#">Сабо</a></li>
+	     												<li class="sublist__item"><a class="sublist__lnk" href="#">Сандали</a></li>
+	     												<li class="sublist__item"><a class="sublist__lnk" href="#">Туфли летние</a></li>
+	     											</ul>
+	     										</li>
+	     										<li class="nav-header__item noslide"><a class="nav-header__lnk" href="#">Детская обувь</a></li>
+	     										<li class="nav-header__item noslide"><a class="nav-header__lnk" href="#">Аксессуары</a></li>
+	     										<li class="nav-header__item noslide"><a class="nav-header__lnk" href="#">Косметика для обуви</a></li>
+	     										<li class="nav-header__item noslide"><a class="nav-header__lnk" href="#">Бренды</a></li>
+	     									</ul>
+	     								</nav>
+	     							</div>
+	     							<div class="col-lg-3">
+	     								<div class="search">
+	     									<form class="search__form" action="/page">
+	     										<input type="text" class="search__input" placeholder="Поиск по сайту">
+	     										<button class="search__btn" type="submit"></button>
+	     									</form>					
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>								
+	     				</div>
+	     			</header>
+
+	     			<main class="main">
+	     				<div class="container">
+	     					<div class="row">
+	     						<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+	     							<div class="breadcrumbs">
+	     								<a class="breadcrumbs__lnk" href="#">Главная </a> / 
+	     								<a class="breadcrumbs__lnk" href="#">Женщинам </a> / 
+	     								<a class="breadcrumbs__lnk" href="#">Босоножки </a> / 
+	     								<a class="breadcrumbs__lnk" href="#">Босоножки на каблуке </a> / besty
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     				<div class="goods-and-desk">
+	     					<div class="container">
+	     						<div class="row">
+	     							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+	     								<div class="quick-view__left catalog-card">
+	     									<div class="quick-view__whole">
+	     										<div class="quick-view__img-big">
+	     											<img src="i/qview-big.jpg" alt="Товар">
+	     										</div>
+	     										<div class="quick-view__img-big">
+	     											<img src="i/qview-big.jpg" alt="Товар" >
+	     										</div>
+	     										<div class="quick-view__img-big">
+	     											<img src="i/qview-big.jpg" alt="Товар">
+	     										</div>
+	     										<div class="quick-view__img-big">
+	     											<img src="i/qview-big.jpg" alt="Товар" >
+	     										</div>
+	     										<div class="quick-view__img-big">
+	     											<img src="i/qview-big.jpg" alt="Товар" >
+	     										</div>
+	     									</div>
+	     									<div class="quick-view__preview">
+	     										<div>
+	     											<div class="quick-view__wrap-img"><img src="i/qview-sm1.jpg" width="67" height="95" alt="Товар"></div>
+	     										</div>
+	     										<div>
+	     											<div class="quick-view__wrap-img"><img src="i/qview-sm2.jpg" width="67" height="95" alt="Товар"></div>
+	     										</div>
+	     										<div>
+	     											<div class="quick-view__wrap-img"><img src="i/qview-sm3.jpg" width="67" height="95" alt="Товар"></div>
+	     										</div>
+	     										<div>
+	     											<div class="quick-view__wrap-img"><img src="i/qview-sm3.jpg" width="67" height="95" alt="Товар"></div>
+	     										</div>
+	     										<div>
+	     											<div class="quick-view__wrap-img"><img src="i/qview-sm1.jpg" width="67" height="95" alt="Товар"></div>
+	     										</div>
+	     										<div>
+	     											<div class="quick-view__wrap-img"><img src="i/qview-sm3.jpg" width="67" height="95" alt="Товар"></div>
+	     										</div>
+	     									</div>
+	     								</div>
+	     							</div>
+	     							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	     								<div class="quick-view__desk right-bar">
+	     									<div class="quick-view__category">Босоножки</div>
+	     									<div  class="quick-view__name-wrap"><a href="#" class="quick-view__name">Betsy</a></div>
+	     									<div class="quick-view__size">
+	     										<a href="javascript:void(0);" class="slct">Выберете размер</a>
+	     										<ul class="drop">
+	     											<li><a href="">35</a></li>
+	     											<li><a href="">36</a></li>
+	     											<li><a href="">37</a></li>
+	     											<li><a href="">38</a></li>
+	     										</ul>
+	     										<input type="hidden" id="select-size">
+	     									</div> 		
+	     									<div class="quick-view__price">2 999 <span>р</span></div>
+	     									<div class="quick-view__wrap-basket clearfix">
+	     										<button class="quick-view__btn-basket btn-red">В корзину</button>
+	     										<a class="quick-view__favorite" href="#"><span>В избранное</span></a>
+	     									</div>	   	
+	     									<div class="quick-view__prop">
+	     										Материал верха:<span class="prop-elem"> искусственная замша </span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Внутренний материал:<span class="prop-elem"> искусственная кожа</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Материал стельки:<span class="prop-elem"> натуральная кожа</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Материал подошвы:<span class="prop-elem"> тунит</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Высота голенища / задника:<span class="prop-elem"> 8 см</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Обхват голенища:<span class="prop-elem">22.5 см</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Высота каблука:<span class="prop-elem">12.5 см</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Тип каблука:<span class="prop-elem"> шпилька</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Цвет:<span class="prop-elem"> оранжевый</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Сезон:<span class="prop-elem"> лето</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Коллекция:<span class="prop-elem"> Весна-лето</span>
+	     									</div>
+	     									<div class="quick-view__prop">
+	     										Артикул:<span class="prop-elem"> LO019AWGUA53</span>
+	     									</div>
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     				<div class="review-and-courier">
+	     					<div class="container">
+	     						<div class="row">
+	     							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+	     								<div class="about-goods">
+	     									<div class="about-goods__title">О товаре</div>
+	     									Босоножки на высокой шпильке LOST INK выполнены из искусственной кожи. Детали: тонкий ремешок на щиколотке, кожаная стелька. LOST INK родился в самом сердце Лондона в легендарном районе West-End. Основная идея марки это "Доступная Роскошь" - сочетание уличной моды с эксклюзивностью бутика. 
+	     								</div>	
+	     								<div class="reviews">
+	     									<div class="reviews__title">Отзывы</div><a href="#write-review" class="btn-grey write-review lnk-fancybox">Оставить отзыв о товаре</a>
+	     									<div class="review__list">
+	     										<div class="review__item">
+	     											<div class="review__text">Алеаторика, согласно традиционным представлениям, регрессийно представляет собой динамический эллипсис. Фаза продолжает open-air. Гармонический интервал изящно представляет собой нонаккорд. Глиссандирующая ритмоформула сонорна. Фузз, следовательно, регрессийно образует кризис жанра, а после исполнения Утесовым роли Потехина в "Веселых ребятах" слава артиста стала всенародной. </div>
+	     											<div class="review__author-info">
+	     												<span class="author-name">Елена Шутова</span>
+	     												<span class="author-contact">2.03.2016,  Батайск</span>
+	     											</div>
+	     										</div>
+	     										<div class="review__item">
+	     											<div class="review__text">Фузз, следовательно, регрессийно образует кризис жанра, а после исполнения Утесовым роли Потехина в "Веселых ребятах" слава артиста стала всенародной. </div>
+	     											<div class="review__author-info">
+	     												<span class="author-name">Александр Панкратов-Чёрный</span>
+	     												<span class="author-contact">2.03.2016,  Ростов-на-Дону</span>
+	     											</div>
+	     										</div>
+	     										<div class="review__item">
+	     											<div class="review__text">Неконсервативная сила требует перейти к поступательно перемещающейся системе координат, чем и характеризуется резонансный параметр Родинга-Гамильтона. Угловая скорость, согласно уравнениям Лагранжа, неустойчиво позволяет исключить из рассмотрения подвес, как и видно из системы </div>
+	     											<div class="review__author-info">
+	     												<span class="author-name">Владимир Пархоменко</span>
+	     												<span class="author-contact">17.03.2016</span>
+	     											</div>
+	     										</div>
+	     										<a class="read-more-show review-spoiler" href="#"><span>Показать еще 5 отзывов</span></a>
+	     										<div class="read-more-content hide">
+	     											<div class="review__item">
+	     												<div class="review__text">Алеаторика, согласно традиционным представлениям, регрессийно представляет собой динамический эллипсис. Фаза продолжает open-air. Гармонический интервал изящно представляет собой нонаккорд. Глиссандирующая ритмоформула сонорна. Фузз, следовательно, регрессийно образует кризис жанра, а после исполнения Утесовым роли Потехина в "Веселых ребятах" слава артиста стала всенародной. </div>
+	     												<div class="review__author-info">
+	     													<span class="author-name">Елена Шутова</span>
+	     													<span class="author-contact">2.03.2016,  Батайск</span>
+	     												</div>
+	     											</div>
+	     											<a class="read-more-hide review-spoiler" href="#"><span>Свернуть</span></a>
+	     										</div>
+	     									</div>										
+	     								</div>	
+	     								<div class="slider-product slider-product_card">
+	     									<div class="product__title">Вместе с этим товаром покупают</div>
+	     									<div class="product__list product__list-inner">
+	     										<div>										
+	     											<div class="product__item product__item_inner">
+	     												<div class="product__wrap-img img-full">
+	     													<img src="i/slider-min1.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Crocs</div>
+	     														<div class="product__category">косметичка</div>
+	     														<div class="product__price"><span class="product__old-price"></span>3 110 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product__item product__item_inner">
+	     												<div class="product__wrap-img img-full">	
+	     													<img src="i/slider-min2.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Salton Professional</div>
+	     														<div class="product__category">крем для обуви</div>
+	     														<div class="product__price"><span class="product__old-price"></span>6 500 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product__item product__item_inner">
+	     												<div class="product__wrap-img img-full">
+	     													<img src="i/slider-min1.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Crocs</div>
+	     														<div class="product__category">косметичка</div>
+	     														<div class="product__price"><span class="product__old-price"></span>4 199 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product__item product__item_inner">
+	     												<div class="product__wrap-img img-full">
+	     													<img src="i/slider-min2.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Salton Professional</div>
+	     														<div class="product__category">крем для обуви</div>
+	     														<div class="product__price"><span class="product__old-price"></span>7 999 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product__item product__item_inner">
+	     												<div class="product__wrap-img img-full">
+	     													<img src="i/slider-min1.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Crocs</div>
+	     														<div class="product__category">косметичка</div>
+	     														<div class="product__price"><span class="product__old-price"></span>2 999 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     									</div>
+	     								</div>
+	     							</div>
+	     							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	     								<div class="card-transfer card-transfer_right">
+	     									<div class="transfer__title">Доставка</div>
+	     									<div class="transfer__type clearfix">
+	     										<div class="transfer__icon"><img src="i/curier-min1.png" alt=""></div>
+	     										<div class="transfer__desc card-transfer">
+	     											<div class="card-transfer__title">Бесплатная курьерская доставка</div>
+	     											Бепплатная курьерская доставка осуществляется в том случае, если стоимость заказанного Вами товара не 
+	     										</div>
+	     									</div>			
+	     									<div class="transfer__type clearfix">
+	     										<div class="transfer__icon"><img src="i/curier-min2.png" alt=""></div>
+	     										<div class="transfer__desc card-transfer">
+	     											<div class="card-transfer__title">Курьерская доставка</div>
+	     											Бепплатная курьерская доставка осуществляется в том случае, если стоимость заказанного Вами товара не 
+	     										</div>
+	     									</div>			
+	     									<div class="transfer__type clearfix">
+	     										<div class="transfer__icon"><img src="i/curier-min3.png" alt=""></div>
+	     										<div class="transfer__desc card-transfer">
+	     											<div class="card-transfer__title">Самовывоз</div>
+	     											Бепплатная курьерская доставка осуществляется в том случае, если стоимость заказанного Вами товара не 
+	     										</div>
+	     									</div>			
+	     									<div class="transfer__type clearfix">
+	     										<div class="transfer__icon"><img src="i/curier-min4.png" alt=""></div>
+	     										<div class="transfer__desc card-transfer">
+	     											<div class="card-transfer__title">Доставка почктой России</div>
+	     											Бепплатная курьерская доставка осуществляется в том случае, если стоимость заказанного Вами товара не 
+	     										</div>
+	     									</div>	
+	     									<div class="quick-view__social">
+	     										<div class="quick-view__title">Поделиться:</div>
+	     										<a class="social__icon mail" href="#"></a> 
+	     										<a class="social__icon inst" href="#"></a>
+	     										<a class="social__icon tw" href="#"></a> 
+	     										<a class="social__icon vk" href="#"></a>
+	     										<a class="social__icon fb" href="#"></a>									
+	     										<a class="social__icon odnk" href="#"></a>
+	     										<div class="social__icon other">
+	     											<div class="social__icon-all">
+	     												<a class="social__icon mail" href="#"></a> 
+	     												<a class="social__icon inst" href="#"></a>
+	     												<a class="social__icon tw" href="#"></a> 
+	     												<a class="social__icon vk" href="#"></a>
+	     												<a class="social__icon fb" href="#"></a>									
+	     												<a class="social__icon odnk" href="#"></a>
+	     												<a class="social__icon mail" href="#"></a> 
+	     												<a class="social__icon inst" href="#"></a>
+	     												<a class="social__icon tw" href="#"></a> 
+	     												<a class="social__icon vk" href="#"></a>
+	     											</div>
+	     										</div>
+	     									</div>									
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+
+	     				<div class="slider-product slider-product_page-inner">
+	     					<div class="container">
+	     						<div class="row">
+	     							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	     								<div class="product__title">Похожие товары</div>
+	     								<div class="product__list product__list-index">
+	     									<div>									
+	     										<div class="product__item product__item_index">
+	     											<div class="product__wrap-img img-full">
+	     												<img src="i/tovar1.jpg" alt="Товар">
+	     												<a href="#quick-view_popup" class="quick-view lnk-fancybox">Быстрый просмотр</a>
+	     											</div>
+	     											<div class="product__desk">
+	     												<a href="#">
+	     													<div class="product__name">Miss Cinderella</div>
+	     													<div class="product__category">Ботинки</div>
+	     													<div class="product__price product__price_new"><span class="product__old-price">3 000 р </span>2 999 р</div>
+	     													<a href="#" class="product__like"></a>
+	     												</a>
+	     											</div>
+	     										</div>
+	     									</div>
+	     									<div>
+	     										<div class="product__item product__item_index">
+	     											<div class="product__wrap-img img-full">
+	     												<img src="i/tovar2.jpg" alt="Товар">
+	     												<a href="#quick-view_popup" class="quick-view lnk-fancybox">Быстрый просмотр</a>
+	     											</div>
+	     											<div class="product__desk">
+	     												<a href="#">
+	     													<div class="product__name">Miss Cinderella</div>
+	     													<div class="product__category">Ботинки</div>
+	     													<div class="product__price"><span class="product__old-price"></span>12 300 р</div>
+	     													<a href="#" class="product__like"></a>
+	     												</a>
+	     											</div>
+	     										</div>
+	     									</div>
+	     									<div>
+	     										<div class="product__item product__item_index">
+	     											<div class="tag-offer-icon__wrap">
+	     												<div class="tag-offer-icon__hit-sale tag-offer-icon_curent"></div>
+	     											</div>
+	     											<div class="product__wrap-img img-full">														
+	     												<img src="i/tovar3.jpg" alt="Товар">
+	     												<a href="#quick-view_popup" class="quick-view lnk-fancybox">Быстрый просмотр</a>
+	     											</div>
+	     											<div class="product__desk">
+	     												<a href="#">
+	     													<div class="product__name">Salamander</div>
+	     													<div class="product__category">Туфли</div>
+	     													<div class="product__price"><span class="product__old-price"></span>6 500 р</div>
+	     													<a href="#" class="product__like"></a>
+	     												</a>
+	     											</div>
+	     										</div>
+	     									</div>
+	     									<div>
+	     										<div class="product__item product__item_index">
+	     											<div class="product__wrap-img img-full">
+	     												<img src="i/tovar4.jpg" alt="Товар">
+	     												<a href="#quick-view_popup" class="quick-view lnk-fancybox">Быстрый просмотр</a>
+	     											</div>
+	     											<div class="product__desk">
+	     												<a href="#">
+	     													<div class="product__name">Salamander</div>
+	     													<div class="product__category">Ботинки</div>
+	     													<div class="product__price"><span class="product__old-price"></span>1 299 р</div>
+	     													<a href="#" class="product__like"></a>
+	     												</a>
+	     											</div>
+	     										</div>
+	     									</div>
+	     									<div>
+	     										<div class="product__item product__item_index">
+	     											<div class="product__wrap-img img-full">
+	     												<img src="i/tovar1.jpg" alt="Товар">
+	     												<a href="#quick-view_popup" class="quick-view lnk-fancybox">Быстрый просмотр</a>
+	     											</div>
+	     											<div class="product__desk">
+	     												<a href="#">
+	     													<div class="product__name">Miss Cinderella</div>
+	     													<div class="product__category">Ботинки</div>
+	     													<div class="product__price"><span class="product__old-price"></span>2 999 р</div>
+	     													<a href="#" class="product__like"></a>
+	     												</a>
+	     											</div>
+	     										</div>
+	     									</div>
+	     								</div>
+	     							</div>
+	     							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">										
+	     								<div class="review-goods">
+	     									<div class="product__title">Просмотренные товары</div>
+	     									<div class="product-viewed">
+	     										<div>
+	     											<div class="product-viewed__item">
+	     												<div class="product-viewed__wrap-img img-full">
+	     													<img src="i/product-view1.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Versace</div>
+	     														<div class="product__category">босоножки</div>
+	     														<div class="product__price"><span class="product__old-price"></span>3 100 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product-viewed__item">
+	     												<div class="product-viewed__wrap-img img-full">
+	     													<img src="i/product-view2.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Michael Michael Kors</div>
+	     														<div class="product__category">босоножки</div>
+	     														<div class="product__price"><span class="product__old-price"></span>3 100 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product-viewed__item">
+	     												<div class="product-viewed__wrap-img img-full">
+	     													<img src="i/product-view3.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Crocs</div>
+	     														<div class="product__category">босоножки</div>
+	     														<div class="product__price"><span class="product__old-price"></span>3 100 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product-viewed__item">
+	     												<div class="product-viewed__wrap-img img-full">
+	     													<img src="i/product-view4.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Michael Michael Kors</div>
+	     														<div class="product__category">босоножки</div>
+	     														<div class="product__price"><span class="product__old-price"></span>3 100 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product-viewed__item">
+	     												<div class="product-viewed__wrap-img img-full">
+	     													<img src="i/product-view5.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Versace</div>
+	     														<div class="product__category">босоножки</div>
+	     														<div class="product__price"><span class="product__old-price"></span>3 100 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product-viewed__item">
+	     												<div class="product-viewed__wrap-img img-full">
+	     													<img src="i/product-view2.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Michael Michael Kors</div>
+	     														<div class="product__category">босоножки</div>
+	     														<div class="product__price"><span class="product__old-price"></span>3 100 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="product-viewed__item">
+	     												<div class="product-viewed__wrap-img img-full">
+	     													<img src="i/product-view1.jpg" alt="Товар">
+	     												</div>
+	     												<div class="product__desk">
+	     													<a href="#">
+	     														<div class="product__name">Versace</div>
+	     														<div class="product__category">босоножки</div>
+	     														<div class="product__price"><span class="product__old-price"></span>3 100 р</div>
+	     													</a>
+	     												</div>
+	     											</div>
+	     										</div>
+	     									</div>
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>	
+	     			</main>
+	     		</div>
+	     		<footer class="footer-main">
+	     			<div class="container">
+	     				<div class="row">
+	     					<div class="col-lg-3">
+	     						<nav class="footer-nav">
+	     							<ul class="footer-nav__list">
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">О нас</a></li>
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">Наши магазины</a></li>
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">Оплата</a></li>
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">Доставка</a></li>
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">Отзывы</a></li>
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">Акции</a></li>
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">Новости</a></li>
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">Скидка в день рождения</a></li>
+	     								<li class="footer-nav__item"><a class="footer-nav__lnk" href="#">Вакансии</a></li>
+	     							</ul>
+	     						</nav>
+	     					</div>
+	     					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+	     						<div class="help">
+	     							<div class="help__title">Помощь</div>
+	     							<ul class="help__list">
+	     								<li class="help__item"><a class="help__lnk" href="#">Как оформить заказ?</a></li>
+	     								<li class="help__item"><a class="help__lnk" href="#">Как выбрать размер?</a></li>
+	     								<li class="help__item"><a class="help__lnk" href="#">Дополнительная информация</a></li>
+	     								<li class="help__item"><a class="help__lnk" href="#">Возврат денежных средств</a></li>
+	     								<li class="help__item"><a class="help__lnk" href="#">Возврат товара</a></li>
+	     								<li class="help__item"><a class="help__lnk" href="#">Сертификаты</a></li>
+	     								<li class="help__item"><a class="help__lnk" href="#">Информация для партнеров</a></li>
+	     							</ul>
+	     						</div>
+	     					</div>
+	     					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+	     						<div class="payment">
+	     							<div class="payment__title">Способ оплаты</div>
+	     							<ul class="payment__list">
+	     								<li class="payment__item"><a class="payment__visa" href="#"></a></li>
+	     								<li class="payment__item"><a class="payment__master" href="#"></a></li>
+	     								<li class="payment__item"><a class="payment__webm" href="#"></a></li>
+	     								<li class="payment__item"><a class="payment__yandex" href="#"></a></li>
+	     								<li class="payment__item"><a class="payment__qiwi" href="#"></a></li>
+	     								<li class="payment__item"><a class="payment__paypal" href="#"></a></li>
+	     							</ul>
+	     							<div class="payment__other">Вы можете оплатить покупки наличными при получении, либо выбрать <a href="#">другой способ оплаты</a></div>
+	     						</div>
+	     					</div>
+	     					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+	     						<div class="footer-contact-wrap">
+	     							<div class="footer-phone">
+	     								<span class="footer-phone__number">8 (800) 200-87-57<br></span>Звонок по России бесплатный
+	     							</div>
+	     							<div class="social">
+	     								<div class="social__title">Мы в социальных сетях</div>
+	     								<a class="social__icon inst" href="#"></a>
+	     								<a class="social__icon youtube" href="#"></a>
+	     								<a class="social__icon vk" href="#"></a>
+	     								<a class="social__icon fb" href="#"></a>									
+	     								<a class="social__icon odnk" href="#"></a>
+	     							</div>
+	     							<div class="webrost">
+	     								<a href="http://www.webrost.ru/" target="_blank" class="webrost__lnk">Разработка сайта - <span>Студия «ВебРост»</span></a>
+	     							</div>
+	     						</div>	
+	     					</div>										
+	     				</div>
+	     			</div>
+	     			<div class="container">
+	     				<div class="row">
+	     					<div class="col-lg-12 col-md-12 col-sm-12">
+	     						<div class="copyright">© 2004  Aty-baty.ru — Интернет- магазин модной обуви, сумок и аксессуаров</div>
+	     					</div>
+	     				</div>
+	     			</div>			
+	     		</footer>
+	     	</div>
+
+	     	<!-- popup -->
+	     	<div id="quick-view_popup">
+	     		<div class="quick-view__img">
+	     			<div class="quick-view__left">
+	     				<div class="quick-view__whole">
+	     					<div class="quick-view__img-big">
+	     						<img src="i/qview-big.jpg" alt="Товар">
+	     					</div>
+	     					<div class="quick-view__img-big">
+	     						<img src="i/qview-big.jpg" alt="Товар" >
+	     					</div>
+	     					<div class="quick-view__img-big">
+	     						<img src="i/qview-big.jpg" alt="Товар">
+	     					</div>
+	     					<div class="quick-view__img-big">
+	     						<img src="i/qview-big.jpg" alt="Товар" >
+	     					</div>
+	     					<div class="quick-view__img-big">
+	     						<img src="i/qview-big.jpg" alt="Товар" >
+	     					</div>
+	     					<div class="quick-view__img-big">
+	     						<img src="i/qview-big.jpg" alt="Товар" >
+	     					</div>	
+	     					<div class="quick-view__img-big">
+	     						<img src="i/qview-big.jpg" alt="Товар" >
+	     					</div>
+	     					<div class="quick-view__img-big">
+	     						<img src="i/qview-big.jpg" alt="Товар" >
+	     					</div>	     					
+	     				</div>
+	     				<div class="quick-view__preview">
+	     					<div>
+	     						<div class="quick-view__wrap-img"><img src="i/qview-sm1.jpg" width="67" height="95" alt="Товар"></div>
+	     					</div>
+	     					<div>
+	     						<div class="quick-view__wrap-img"><img src="i/qview-sm2.jpg" width="67" height="95" alt="Товар"></div>
+	     					</div>
+	     					<div>
+	     						<div class="quick-view__wrap-img"><img src="i/qview-sm3.jpg" width="67" height="95" alt="Товар"></div>
+	     					</div>
+	     					<div>
+	     						<div class="quick-view__wrap-img"><img src="i/qview-sm3.jpg" width="67" height="95" alt="Товар"></div>
+	     					</div>
+	     					<div>
+	     						<div class="quick-view__wrap-img"><img src="i/qview-sm1.jpg" width="67" height="95" alt="Товар"></div>
+	     					</div>
+	     					<div>
+	     						<div class="quick-view__wrap-img"><img src="i/qview-sm3.jpg" width="67" height="95" alt="Товар"></div>
+	     					</div>
+	     					<div>
+	     						<div class="quick-view__wrap-img"><img src="i/qview-sm1.jpg" width="67" height="95" alt="Товар"></div>
+	     					</div>
+	     					<div>
+	     						<div class="quick-view__wrap-img"><img src="i/qview-sm3.jpg" width="67" height="95" alt="Товар"></div>
+	     					</div>
+	     				</div>
+	     			</div>
+	     			<div class="quick-view__social">
+	     				<div class="quick-view__title">Поделиться:</div>
+	     				<a class="social__icon mail" href="#"></a> 
+							<a class="social__icon inst" href="#"></a>
+							<a class="social__icon tw" href="#"></a> 
+							<a class="social__icon vk" href="#"></a>
+							<a class="social__icon fb" href="#"></a>									
+							<a class="social__icon odnk" href="#"></a>
+	     			</div>
+	     		</div>
+	     		<div class="quick-view__desk">
+	     			<div class="quick-view__category">Босоножки</div>
+	     			<a href="#" class="quick-view__name">Betsy</a>
+	     			<div class="quick-view__size">
+	     				<a href="javascript:void(0);" class="slct">Выберете размер</a>
+	     				<ul class="drop">
+	     					<li><a href="">35</a></li>
+	     					<li><a href="">36</a></li>
+	     					<li><a href="">37</a></li>
+	     					<li><a href="">38</a></li>
+	     				</ul>
+	     				<input type="hidden" id="select">
+	     			</div> 		 		
+	     			<div class="quick-view__price">2 999 <span>р</span></div>
+	     			<div class="quick-view__wrap-basket clearfix">
+	     				<button class="quick-view__btn-basket btn-red">В корзину</button>
+	     				<a class="quick-view__favorite" href="#">В избранное</a>
+	     			</div>	
+	     			<div class="quick-view__wrap-prop">
+	     				<div class="quick-view__prop">
+	     					Материал верха:<span class="prop-elem"> искусственная замша </span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Внутренний материал:<span class="prop-elem"> искусственная кожа</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Материал стельки:<span class="prop-elem"> натуральная кожа</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Материал подошвы:<span class="prop-elem"> тунит</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Высота голенища / задника:<span class="prop-elem"> 8 см</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Обхват голенища:<span class="prop-elem">22.5 см</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Высота каблука:<span class="prop-elem">12.5 см</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Тип каблука:<span class="prop-elem"> шпилька</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Цвет:<span class="prop-elem"> оранжевый</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Сезон:<span class="prop-elem"> лето</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Коллекция:<span class="prop-elem"> Весна-лето</span>
+	     				</div>
+	     				<div class="quick-view__prop">
+	     					Артикул:<span class="prop-elem"> LO019AWGUA53</span>
+	     				</div>
+	     			</div>      			
+	     			<a href="#" class="quick-view__read-more">Подробнее о товаре</a>
+	     		</div>
+	     	</div>
+
+	     	<!-- popup review-->
+	     	<div id="write-review">
+	     		<div class="write-review__title">Написать сообщение</div>
+	     		<div class="write-review__messege">Поля отмеченные звёздочкой обязательны для заполнения</div>
+	     		<div class="write-review__form">
+	     			<form>
+	     				<fieldset class="review__wrap-row">
+	     					<label for="review__name" class="review__label">Ваше имя <span>*</span></label>
+	     					<input id="review__name" type="text" class="write-review__input">
+	     				</fieldset>
+	     				<fieldset class="review__wrap-row">
+	     					<label for="review__mail" class="review__label">Адрес электронной почты <span>*</span></label>
+	     					<input id="review__mail" type="text" class="write-review__input">
+	     				</fieldset>
+	     				<fieldset class="review__wrap-row">
+	     					<label for="review__number" class="review__label">Номер телефона</label>
+	     					<input id="review__number" type="text" class="write-review__input">
+	     				</fieldset>
+	     				<fieldset class="review__wrap-row">
+	     					<label for="review__text" class="review__label">Текст отзыва <span>*</span></label>
+	     					<textarea id="review__text" class="write-review__textarea"></textarea>
+	     				</fieldset>
+	     				<input type="submit" class="btn-red">
+	     			</form>
+	     		</div>   		
+	     	</div>
+
+
+	     	<!-- Footer Scripts -->
+	     	<!-- Custom js scripts -->
+	     	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	     	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	     	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	     	<script type="text/javascript" src="js/slick.min.js"></script>
+	     	<script type="text/javascript" src="js/jquery.time-to.min.js"></script>
+	     	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	     	<script type="text/javascript" src="js/script.js"></script>
+	     </body>
+
+	     </html>
